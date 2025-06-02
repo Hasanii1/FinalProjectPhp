@@ -3,11 +3,12 @@
 $user="root";
 $pass="";
 $server="localhost";
-$dbname="movies1";
+$dbname='student_system';
 
 try {
 	//Creating a PDO to connect with database
-	$conn =new PDO("mysql:host=$server;dbname=$dbname",$user,$pass);
+	$pdo =new PDO("mysql:host=$server;dbname=$dbname",$user,$pass);
+	$pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
 	echo "error: " . $e->getMessage();
 }

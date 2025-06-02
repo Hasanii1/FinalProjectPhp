@@ -94,7 +94,7 @@
               <input type="password" class="form-control" id="confirmPassword" name="confirmPassword"  placeholder="Confirm password" required>
             </div>
             <div class="d-grid">
-              <button type="submit" class="btn btn-primary">Sign Up</button>
+              <button type="submit" name="submit" class="btn btn-primary">Sign Up</button>
             </div>
           </form>
           <p class="text-center mt-3 mb-0">Already have an account? <a href="login.php">Login</a></p>
