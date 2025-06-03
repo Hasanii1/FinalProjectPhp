@@ -1,16 +1,18 @@
 <?php
-//Initialization of some variables for maintaining database data
-$user="root";
-$pass="";
-$server="localhost";
-$dbname='student_system';
+$host = 'localhost';
+$db   = 'student_management';
+$user = 'root';
+$pass = ''; // vendos password-in tënd nëse ka
+
+$dsn = "mysql:host=$host;dbname=$db;charset=utf8mb4";
+$options = [
+    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+];
 
 try {
-	//Creating a PDO to connect with database
-	$pdo =new PDO("mysql:host=$server;dbname=$dbname",$user,$pass);
-	$pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+    $pdo = new PDO($dsn, $user, $pass, $options);
 } catch (PDOException $e) {
-	echo "error: " . $e->getMessage();
+    echo "Database connection failed: " . $e->getMessage();
+    exit();
 }
-
-?>
