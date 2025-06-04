@@ -1,15 +1,15 @@
-<?php
+ <?php
 session_start();
 if (!isset($_SESSION['admin'])) {
     header("Location: login.php");
     exit;
-}
+} 
 
 require 'config.php';
 
 $stmt = $pdo->query("SELECT * FROM students");
 $students = $stmt->fetchAll(PDO::FETCH_ASSOC);
-?>
+?> 
 
 <!DOCTYPE html>
 <html lang="en">

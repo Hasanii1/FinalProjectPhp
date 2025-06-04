@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost';
-$db   = 'student_management';
+$db   = 'student_system';
 $user = 'root';
 $pass = ''; // vendos password-in tënd nëse ka
 
