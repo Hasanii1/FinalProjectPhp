@@ -12,6 +12,7 @@ background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 
 }
  
 </style>
+<form action="login_logic.php" method="POST">
 
 <section class="vh-100 gradient-custom">
   <div class="container py-5 h-100">
@@ -58,3 +59,5 @@ background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 
     </div>
   </div>
 </section>
+
+</form>
