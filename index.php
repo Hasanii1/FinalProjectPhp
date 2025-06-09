@@ -7,7 +7,7 @@ if (!isset($_SESSION['admin'])) {
 
 require 'config.php';
 
-$stmt = $pdo->query("SELECT * FROM students");
+$stmt = $pdo->query("SELECT * FROM users");
 $students = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?> 
 

@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost';
-$db   = 'student_system';
+$db   = 'student_menagement';
 $user = 'root';
 $pass = ''; // vendos password-in tënd nëse ka
 
@@ -11,7 +11,7 @@ $options = [
 ];
 
 try {
-    $pdo = new PDO($dsn, $user, $pass, $options);
+    $conn = new PDO($dsn, $user, $pass, $options);
 } catch (PDOException $e) {
     echo "Database connection failed: " . $e->getMessage();
     exit();
