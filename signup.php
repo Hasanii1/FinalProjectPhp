@@ -76,7 +76,7 @@
       <div class="card shadow-sm">
         <div class="card-body">
           <h3 class="card-title text-center mb-4">Sign Up</h3>
-          <form>
+          <form action="register.php" method="post">
             <div class="mb-3">
               <label for="name" class="form-label">Full Name</label>
               <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name"  required>

@@ -36,10 +36,7 @@ background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 
                 <label class="form-label" for="typePasswordX">Password</label>
               </div>
 
-              <div data-mdb-input-init class="form-outline form-white mb-4">
-                <input type="text" id="typeEmailX" name="text" placeholder="Enter your role" class="form-control form-control-lg " />
-                <label class="form-label" for="typeEmailX">Role</label>
-              </div>
+             
 
               <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>
 
