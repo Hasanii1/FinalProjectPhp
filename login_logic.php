@@ -59,7 +59,7 @@
 				if (password_verify($password, $data['password'])) {
 					//If this condition is true, we will store $data values to $_SESSION variables
 					$_SESSION['id'] = $data['id'];
-					$_SESSION['username'] = $data['username'];
+					$_SESSION['name'] = $data['name'];
 					$_SESSION['email'] = $data['email'];
 					$_SESSION['emri'] = $data['emri'];
 					$_SESSION['is_admin'] = $data['is_admin'];
